@@ -1,0 +1,1 @@
+{!! $payout->status_badge !!}

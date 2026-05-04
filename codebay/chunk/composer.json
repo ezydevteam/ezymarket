@@ -1,0 +1,18 @@
+{
+    "name": "codebay/chunk",
+    "description": "Chunk Upload Handler for Large Files",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Codebay\\Chunk\\": "."
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Codebay\\Chunk\\Providers\\ChunkUploadServiceProvider"
+            ]
+        }
+    }
+}

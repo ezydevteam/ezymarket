@@ -1,0 +1,13 @@
+{
+    "dejavu sans": {
+        "bold": "D:\\laragon\\www\\ezymarket\\vendor\\dompdf\\dompdf\/lib\/fonts\/DejaVuSans-Bold",
+        "bold_italic": "D:\\laragon\\www\\ezymarket\\vendor\\dompdf\\dompdf\/lib\/fonts\/DejaVuSans-BoldOblique",
+        "italic": "D:\\laragon\\www\\ezymarket\\vendor\\dompdf\\dompdf\/lib\/fonts\/DejaVuSans-Oblique",
+        "normal": "dejavu_sans_normal_bb080c570d2606dae824dd456783dc20"
+    },
+    "hind siliguri": {
+        "normal": "D:\\laragon\\www\\ezymarket\\storage\\fonts\/hind_siliguri_normal_15b9b61605e9fff824911b45ac85b7ed",
+        "600": "D:\\laragon\\www\\ezymarket\\storage\\fonts\/hind_siliguri_600_30ea921696e11a259eed574d1878d8d4",
+        "bold": "hind_siliguri_bold_f0ff0e518faa51de1d4138edccfee6eb"
+    }
+}

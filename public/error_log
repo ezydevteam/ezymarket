@@ -1,0 +1,5 @@
+[04-Oct-2025 15:27:54 UTC] PHP Notice:  date_default_timezone_set(): Timezone ID '' is invalid in /home/diziplac/tools.diziplace.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php on line 47
+[04-Oct-2025 15:27:55 UTC] PHP Notice:  date_default_timezone_set(): Timezone ID '' is invalid in /home/diziplac/tools.diziplace.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php on line 47
+[04-Oct-2025 15:28:20 UTC] PHP Notice:  date_default_timezone_set(): Timezone ID '' is invalid in /home/diziplac/tools.diziplace.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php on line 47
+[04-Oct-2025 15:28:21 UTC] PHP Notice:  date_default_timezone_set(): Timezone ID '' is invalid in /home/diziplac/tools.diziplace.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php on line 47
+

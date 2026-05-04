@@ -1,0 +1,162 @@
+<?php
+
+namespace App\Http\Controllers\Theme;
+
+use App\Http\Controllers\Controller;
+use App\Enums\TransactionStatus;
+use App\Classes\CountryList;
+use App\Models\Financial\PaymentGateway;
+use App\Models\Financial\Transaction;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
+
+class CheckoutController extends Controller
+{
+    public function index($id)
+    {
+        $trx = Transaction::where('id', hash_decode($id))
+            ->where('user_id', authUser()->id)
+            ->whereIn('status', [TransactionStatus::UNPAID, TransactionStatus::PAID])
+            ->firstOrFail();
+
+        if ($trx->isUnpaid()) {
+            if ($this->trxHasAChange($trx)) {
+                $trx->delete();
+                toastr()->info(translate('There has been a change in your transaction'));
+                return redirect()->route('home');
+            }
+        }
+
+        $paymentGateways = PaymentGateway::excludeBalanceIfZero(authUser()->balance)
+            ->active()->count();
+        if ($paymentGateways < 1) {
+            toastr()->info('No active payment gateways');
+            return back();
+        }
+
+        return theme_view('checkout', [
+            'trx' => $trx,
+        ]);
+    }
+
+    public function process(Request $request, $id)
+    {
+        $user = authUser();
+
+        $trx = Transaction::where('id', hash_decode($id))->where('user_id', $user->id)
+            ->unpaid()->firstOrFail();
+
+        if ($this->trxHasAChange($trx)) {
+            $trx->delete();
+            toastr()->info(translate('There has been a change in your transaction'));
+            return redirect()->route('home');
+        }
+
+        $validator = Validator::make($request->all(), [
+            'payment_method' => ['required', 'string', 'exists:payment_gateways,alias'],
+            'address_line_1' => ['required', 'string', 'max:255', 'block_patterns'],
+            'address_line_2' => ['nullable', 'string', 'max:255', 'block_patterns'],
+            'city' => ['required', 'string', 'max:150', 'block_patterns'],
+            'state' => ['required', 'string', 'max:150', 'block_patterns'],
+            'zip' => ['required', 'string', 'max:100', 'block_patterns'],
+            'country' => ['required', 'string', 'in:' . implode(',', array_keys(CountryList::all()))],
+        ]);
+
+        if ($validator->fails()) {
+            foreach ($validator->errors()->all() as $error) {
+                toastr()->error($error);
+            }
+            return back()->withInput();
+        }
+
+        $paymentGateway = PaymentGateway::where('alias', $request->payment_method)
+            ->active()->firstOrFail();
+
+        $address = [
+            'line_1' => $request->address_line_1,
+            'line_2' => $request->address_line_2,
+            'city' => $request->city,
+            'state' => $request->state,
+            'zip' => $request->zip,
+            'country' => $request->country,
+        ];
+
+        $user->address = $address;
+        $user->update();
+
+        $user->addCountryBadge($request->country);
+
+        $trx->payment_gateway_id = $paymentGateway->id;
+        $trx->payment_id = null;
+        $trx->payer_id = null;
+        $trx->payer_email = null;
+        $trx->update();
+
+        $trx->calculate();
+
+        $alias = ucfirst(Str::studly($paymentGateway->alias));
+        $processor = new ("App\\Http\\Controllers\\Payments\\{$alias}Controller");
+        $response = json_decode($processor->process($trx));
+
+        if ($response) {
+            if (isset($response->type) && $response->type == "error") {
+                toastr()->error($response->msg ?? 'Payment processing failed');
+                return back();
+            }
+
+            if (isset($response->type) && $response->type == "success" && isset($response->method) && $response->method == "redirect") {
+                return redirect($response->redirect_url);
+            }
+
+            if (isset($response->type) && $response->type == "success" && isset($response->method) && $response->method == "hosted") {
+                $data = isset($response->body) ? $response->body : null;
+                return theme_view("payments.{$response->view}", [
+                    'trx' => $trx,
+                    'data' => $data,
+                ]);
+            }
+        }
+
+        return back();
+    }
+
+    private function trxHasAChange($trx)
+    {
+        if ($trx->isTypePurchase()) {
+            $totalProductsAmount = 0;
+            foreach ($trx->trxProducts as $trxProduct) {
+                $totalProductsAmount += $trxProduct->getTotalAmount();
+            }
+
+            if (round($totalProductsAmount, 2) != $trx->amount) {
+                return true;
+            }
+        }
+
+        if ($trx->isTypeDeposit() && !@settings('deposit')->status) {
+            return true;
+        }
+
+        return false;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

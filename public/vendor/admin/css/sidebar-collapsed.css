@@ -1,0 +1,372 @@
+/**
+ * ============================================
+ * COLLAPSIBLE SIDEBAR STYLES
+ * ============================================
+ * Icon-only sidebar with hover expansion
+ * Desktop only - Mobile keeps slide behavior
+ */
+
+:root {
+  --sidebar_collapsed_size: 60px;
+}
+
+/* ============================================
+   SIDEBAR TOGGLE BUTTON (Inside Sidebar)
+   ============================================ */
+
+#sidebarToggleBtn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: var(--sidebar_text_color, #6b7280);
+  cursor: pointer;
+  padding: 8px 10px;
+  transition: all 0.25s ease;
+  z-index: 10;
+  display: none;
+  line-height: 1;
+  border-radius: 50%;
+}
+
+#sidebarToggleBtn:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: var(--primary_color);
+}
+
+#sidebarToggleBtn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+#sidebarToggleBtn i {
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* ============================================
+   DESKTOP COLLAPSED STATE (Icon-Only)
+   ============================================ */
+.ezydev-sidebar-header .ezydev-sidebar-logo {
+    width: 140px;
+    margin: 0;
+}
+
+@media (min-width: 1200px) {
+
+  .nav-toggle-sidebar {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #sidebarToggleBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Collapsed Sidebar */
+  .ezydev-sidebar.collapsed {
+    width: var(--sidebar_collapsed_size);
+  }
+
+  /* Hide toggle button when collapsed */
+  .ezydev-sidebar.collapsed #sidebarToggleBtn {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  /* Show toggle button on collapsed sidebar hover */
+  .ezydev-sidebar.collapsed:hover #sidebarToggleBtn {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Center toggle button in collapsed state */
+  .ezydev-sidebar.collapsed #sidebarToggleBtn {
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  .ezydev-sidebar.collapsed .ezydev-sidebar-logo {
+    width: 40px;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Hide full logo, show small logo when collapsed */
+  .ezydev-sidebar.collapsed .ezydev-sidebar-logo .logo-full {
+    display: none;
+  }
+
+  .ezydev-sidebar.collapsed .ezydev-sidebar-logo .logo-small {
+    display: block;
+    max-width: 35px;
+    max-height: 35px;
+    object-fit: contain;
+  }
+
+  /* Show full logo, hide small logo when expanded */
+  .ezydev-sidebar .ezydev-sidebar-logo .logo-full {
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .ezydev-sidebar .ezydev-sidebar-logo .logo-small {
+    display: none;
+  }
+
+  .ezydev-sidebar.collapsed .ezydev-sidebar-group-title {
+    display: none;
+  }
+
+  .ezydev-sidebar.collapsed .ezydev-sidebar-link {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+  }
+
+  .ezydev-sidebar.collapsed .ezydev-sidebar-link span:first-child {
+    font-size: 0;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ezydev-sidebar.collapsed .ezydev-sidebar-link span:first-child i {
+    font-size: 1rem;
+    line-height: normal;
+    margin: 0;
+    width: auto;
+    display: inline-block;
+  }
+
+  /* Hide arrows and counters */
+  .ezydev-sidebar.collapsed .ezydev-sidebar-link .arrow,
+  .ezydev-sidebar.collapsed .ezydev-sidebar-link .counter {
+    display: none;
+  }
+
+  /* Hide submenu in collapsed state */
+  .ezydev-sidebar.collapsed .ezydev-sidebar-submenu {
+    display: none !important;
+  }
+
+  /* Adjust main wrapper for collapsed sidebar */
+  .ezydev-main-wrapper.collapsed {
+    width: calc(100% - var(--sidebar_collapsed_size));
+  }
+
+  /* Header stays in place - no position changes */
+  .ezydev-main-wrapper.collapsed .ezydev-header {
+    width: calc(100% - var(--sidebar_collapsed_size));
+  }
+
+  /* ============================================
+     HOVER EXPANSION (Desktop Collapsed)
+     ============================================ */
+
+  .ezydev-sidebar.collapsed:hover {
+    width: var(--sidebar-size);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--nav-sidebar-bg-color, #fff);
+    z-index: 1001;
+  }
+
+  /* Restore toggle button position on hover */
+  .ezydev-sidebar.collapsed:hover #sidebarToggleBtn {
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
+  /* Show full logo on hover */
+  .ezydev-sidebar.collapsed:hover .ezydev-sidebar-logo {
+    width: 140px;
+  }
+
+  .ezydev-sidebar.collapsed:hover .ezydev-sidebar-logo .logo-full {
+    display: block;
+  }
+
+  .ezydev-sidebar.collapsed:hover .ezydev-sidebar-logo .logo-small {
+    display: none;
+  }
+
+  /* Show text on hover */
+  .ezydev-sidebar.collapsed:hover .ezydev-sidebar-group-title {
+    display: block;
+  }
+
+  .ezydev-sidebar.collapsed:hover .ezydev-sidebar-link span:first-child {
+    font-size: 0.9rem;
+    line-height: 1.125rem;
+    display: block;
+    width: auto;
+  }
+
+  .ezydev-sidebar.collapsed:hover .ezydev-sidebar-link span:first-child i {
+    margin-right: 10px;
+    font-size: 1rem;
+    width: 25px;
+  }
+
+  /* Show arrows and counters on hover */
+  .ezydev-sidebar.collapsed:hover .ezydev-sidebar-link .arrow,
+  .ezydev-sidebar.collapsed:hover .ezydev-sidebar-link .counter {
+    display: block;
+  }
+
+  /* Restore normal padding on hover */
+  .ezydev-sidebar.collapsed:hover .ezydev-sidebar-link {
+    justify-content: flex-start;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  /* Show submenu on hover */
+  .ezydev-sidebar.collapsed:hover .ezydev-sidebar-submenu {
+    display: block !important;
+  }
+
+  /* ============================================
+     TOOLTIPS FOR COLLAPSED STATE
+     ============================================ */
+
+  .ezydev-sidebar.collapsed .ezydev-sidebar-link {
+    position: relative;
+  }
+
+  .ezydev-sidebar.collapsed .ezydev-sidebar-link::after {
+    content: attr(data-title);
+    position: absolute;
+    left: calc(var(--sidebar_collapsed_size) + 10px);
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #1f2937;
+    color: #fff;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+    pointer-events: none;
+    z-index: 1002;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .ezydev-sidebar.collapsed .ezydev-sidebar-link:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+  }
+
+  /* Hide tooltip when sidebar is being hovered (expanded) */
+  .ezydev-sidebar.collapsed:hover .ezydev-sidebar-link::after {
+    display: none;
+  }
+
+  /* ============================================
+     SMOOTH TRANSITIONS
+     ============================================ */
+
+  .ezydev-sidebar,
+  .ezydev-main-wrapper,
+  .ezydev-header {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .ezydev-sidebar .ezydev-sidebar-logo,
+  .ezydev-sidebar .ezydev-sidebar-logo img,
+  .ezydev-sidebar .ezydev-sidebar-link,
+  .ezydev-sidebar .ezydev-sidebar-group-title {
+    transition: all 0.25s ease-in-out;
+  }
+
+  /* ============================================
+     ACTIVE/CURRENT STATE INDICATORS
+     ============================================ */
+
+  /* Add a left border indicator for active items when collapsed */
+  .ezydev-sidebar.collapsed .ezydev-sidebar-item.current .ezydev-sidebar-link,
+  .ezydev-sidebar.collapsed .ezydev-sidebar-item.active > .ezydev-sidebar-link {
+    border-left: 3px solid var(--primary_color);
+    background-color: rgba(59, 130, 246, 0.05);
+  }
+
+  /* ============================================
+     SUBMENUS IN COLLAPSED MODE
+     ============================================ */
+
+  /* When expanded via hover, show submenu items properly */
+  .ezydev-sidebar.collapsed:hover .ezydev-sidebar-submenu .ezydev-sidebar-link {
+    padding-left: 48px;
+  }
+
+  /* ============================================
+     PREVENT LAYOUT SHIFT
+     ============================================ */
+
+  /* Fixed positioning to prevent layout shift on hover */
+  .ezydev-sidebar.collapsed {
+    position: fixed;
+  }
+
+  /* Don't affect main wrapper when hovering collapsed sidebar */
+  .ezydev-main-wrapper.collapsed,
+  .ezydev-main-wrapper.collapsed .ezydev-header {
+    transition: width 0.3s ease-in-out;
+  }
+}
+
+/* ============================================
+   MOBILE - NO COLLAPSED MODE
+   ============================================ */
+@media (max-width: 1199.98px) {
+  /* Hide sidebar logo on mobile (logo shown in navbar instead) */
+  .ezydev-sidebar-header .ezydev-sidebar-logo .logo-small{
+    display: none !important;
+  }
+
+.ezydev-sidebar-header .ezydev-sidebar-logo .logo-full {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+  }
+  /* Ensure collapsed class doesn't affect mobile */
+  .ezydev-sidebar.collapsed {
+    width: var(--sidebar-size);
+  }
+
+  .ezydev-sidebar.collapsed .ezydev-sidebar-link::after {
+    display: none !important;
+  }
+}
+
+/* Navbar logo styling */
+.navbar-logo {
+  max-width: 120px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-logo img {
+  width: auto;
+  height: 30px;
+  object-fit: contain;
+  transition: opacity 0.2s ease;
+}
+
+.navbar-logo:hover img {
+  opacity: 0.85;
+}

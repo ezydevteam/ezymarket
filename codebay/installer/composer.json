@@ -1,0 +1,22 @@
+{
+    "name": "codebay/installer",
+    "description": "EasyMarket Installation Package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Codebay\\Installer\\": ".",
+            "Codebay\\Installer\\App\\": "app"
+        },
+        "files": [
+            "app/Helpers/functions.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Codebay\\Installer\\InstallerServiceProvider"
+            ]
+        }
+    }
+}

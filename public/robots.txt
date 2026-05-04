@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /api/*
+Disallow: /products/preview/*
+Disallow: /products/license/*
+Disallow: /products/download/*
+Disallow: /products/premium/*
+

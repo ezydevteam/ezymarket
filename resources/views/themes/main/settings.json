@@ -1,0 +1,2485 @@
+{
+    "general": [
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-light",
+            "label": "Logo dark",
+            "name": "logo-dark",
+            "description": "Allowed types (JPG,JPEG,PNG,SVG,WEBP)",
+            "path": "images\/",
+            "key": "logo_dark",
+            "value": "themes\/main\/images\/logo-dark.png",
+            "accept": ".jpg,.jpeg,.png,.svg,webp",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg,png,svg,webp"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-dark",
+            "label": "Logo light",
+            "name": "logo-light",
+            "description": "Allowed types (JPG,JPEG,PNG,SVG,WEBP)",
+            "path": "images\/",
+            "key": "logo_light",
+            "value": "themes\/main\/images\/logo-light.png",
+            "accept": ".jpg,.jpeg,.png,.svg,webp",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg,png,svg,webp"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-light",
+            "label": "Favicon",
+            "name": "favicon",
+            "description": "Allowed types (JPG,JPEG,PNG,ICO)",
+            "path": "images\/",
+            "key": "favicon",
+            "value": "themes\/main\/images\/favicon.png",
+            "accept": ".jpg,.jpeg,.png,.ico",
+            "rule": [
+                "nullable",
+                "mimes:png,jpg,jpeg,ico"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-light",
+            "label": "Social Image",
+            "description": "Allowed types (JPG,JPEG)",
+            "path": "images\/",
+            "key": "social_image",
+            "value": "themes\/basic\/images\/tVzZ4W441u0kcNK_1746790330.jpg",
+            "accept": ".jpg,.jpeg",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg"
+            ]
+        }
+    ],
+    "colors": [
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Primary Color",
+            "key": "primary_color",
+            "value": "#3c00ff",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Secondary Color",
+            "key": "secondary_color",
+            "value": "#222222",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Background Color",
+            "key": "background_color",
+            "value": "#ffffff",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Navbar 1 Background Color",
+            "key": "navbar1_background_color",
+            "value": "#ffffff",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Navbar 2 Background Color",
+            "key": "navbar2_background_color",
+            "value": "#ffffff",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Trending Item Badge Color",
+            "key": "trending_item_badge_color",
+            "value": "#0074e4",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Sale Item Badge Color",
+            "key": "sale_item_badge_color",
+            "value": "#0bbe9a",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Free Item Badge Color",
+            "key": "free_item_badge_color",
+            "value": "#743cee",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Header Background Color",
+            "key": "header_background_color",
+            "value": "#f7f7f7",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Swiper Background Color",
+            "key": "swiper_background_color",
+            "value": "#ecf5f8",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Text Color",
+            "key": "text_color",
+            "value": "#2b2b2b",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Heading Color",
+            "key": "heading_color",
+            "value": "#010d4c",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Text Muted",
+            "key": "text_muted",
+            "value": "#8e9cba",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Border Color",
+            "key": "border_color",
+            "value": "#ececec",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Dashboard Sidebar Header Background Color",
+            "key": "dashboard_sidebar_header_background_color",
+            "value": "#ffffff",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Dashboard Sidebar Body Background Color",
+            "key": "dashboard_sidebar_body_background_color",
+            "value": "#ffffff",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Dashboard Sidebar Elements Background Color",
+            "key": "dashboard_sidebar_elements_background_color",
+            "value": "#ffffff",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Files Icon Color",
+            "key": "files_icon_color",
+            "value": "#03a84e",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Item Preview Navbar Background",
+            "key": "item_preview_navbar_background",
+            "value": "#222222",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Footer Background Color",
+            "key": "footer_background_color",
+            "value": "#ffffff",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Footer Border Color",
+            "key": "footer_border_color",
+            "value": "#ececec",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Footer Text Color",
+            "key": "footer_text_color",
+            "value": "#444444",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        }
+    ],
+    "home_page": [
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "square-large",
+            "box_bg": "bg-light",
+            "label": "Header Background",
+            "description": "Supported (JPEG, JPG, PNG, SVG, WEBP) Size 1920x700px.",
+            "path": "images\/home-page\/",
+            "key": "header_background",
+            "value": "themes\/basic\/images\/home-page\/JV70vgJqSmskgTH_1760114666.png",
+            "accept": ".jpg,.jpeg,.png,.svg,.webp",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg,png,svg,webp",
+                "max:4096"
+            ]
+        }
+    ],
+    "profile": [
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-light",
+            "label": "Profile Default Banner",
+            "description": "Supported JPEG, JPG, PNG and Size 1920x180px.",
+            "path": "images\/profile\/",
+            "key": "profile_default_banner",
+            "size": "1920x180",
+            "value": "themes\/main\/images\/profile\/yfc4EI1PifGXnj8_1776427313.jpg",
+            "accept": ".jpg,.jpeg,.png",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg,png",
+                "max:5120"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Container Width",
+            "key": "container_width",
+            "value": "boxed",
+            "option_col": "col-4",
+            "options": [
+                {
+                    "value": "default",
+                    "label": "Default",
+                    "icon": "bi-aspect-ratio"
+                },
+                {
+                    "value": "boxed",
+                    "label": "Boxed",
+                    "icon": "bi-bounding-box-circles"
+                },
+                {
+                    "value": "fluid",
+                    "label": "Full Width",
+                    "icon": "bi-arrows-fullscreen"
+                }
+            ],
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        }
+    ],
+    "footer": [
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Footer About",
+            "key": "footer_about",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Footer Payment Methods",
+            "key": "footer_payment_methods",
+            "value": 0,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-dark",
+            "label": "Footer Logo",
+            "name": "footer-logo",
+            "description": "Allowed types (JPG,JPEG,PNG,SVG,WEBP)",
+            "path": "images\/",
+            "key": "footer_logo",
+            "value": "themes\/basic\/images\/footer-logo.png",
+            "accept": ".jpg,.jpeg,.png,.svg,webp",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg,png,svg,webp"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-light",
+            "label": "Footer Payment Methods Logo",
+            "description": "Allowed types (JPG,JPEG,PNG)",
+            "path": "images\/",
+            "key": "footer_payment_methods_logo",
+            "value": "themes\/basic\/images\/DhgbmUmrkccC3Rx_1745491127.png",
+            "accept": ".jpg,.jpeg,.png",
+            "rule": [
+                "nullable",
+                "image",
+                "mimes:jpg,jpeg,png"
+            ]
+        },
+        {
+            "col": "col-12",
+            "field": "textarea",
+            "label": "About Content",
+            "key": "footer_about_content",
+            "value": "DiziPlace is the largest digital product marketplace where you can easily sell your digital products or purchase the ones you need.",
+            "rows": 5,
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "block_patterns",
+                "max:300"
+            ]
+        },
+        {
+            "col": "col-12 col-lg-6",
+            "field": "input",
+            "type": "number",
+            "label": "Items Sold",
+            "key": "footer_items_sold",
+            "value": "106",
+            "required": true,
+            "rule": [
+                "required",
+                "integer",
+                "min:0"
+            ]
+        },
+        {
+            "col": "col-12 col-lg-6",
+            "field": "input",
+            "type": "number",
+            "label": "Sellers Earnings",
+            "key": "footer_Sellers_earnings",
+            "value": "32765",
+            "required": true,
+            "rule": [
+                "required",
+                "integer",
+                "min:0"
+            ]
+        }
+    ],
+    "extra_codes": [
+        {
+            "col": "col-12",
+            "field": "textarea",
+            "label": "Head Code",
+            "key": "head_code",
+            "value": null,
+            "rows": 10,
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-12",
+            "field": "textarea",
+            "label": "Footer Code",
+            "key": "footer_code",
+            "value": null,
+            "rows": 10,
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        }
+    ],
+    "product_index_page": [
+        {
+            "field": "heading",
+            "label": "Product Index Page",
+            "menu": "Page Layouts",
+            "description": "Control the structural arrangement and container of the product index page.",
+            "icon": "bi-file-earmark-text"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Container Width",
+            "key": "container_width",
+            "value": "default",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "default",
+                    "label": "Default",
+                    "icon": "bi-aspect-ratio"
+                },
+                {
+                    "value": "boxed",
+                    "label": "Boxed",
+                    "icon": "bi-bounding-box-circles"
+                },
+                {
+                    "value": "fluid",
+                    "label": "Full Width",
+                    "icon": "bi-arrows-fullscreen"
+                }
+            ],
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Sidebar Layout",
+            "key": "sidebar_layout",
+            "rule": "required",
+            "value": "no_sidebar",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "left_sidebar",
+                    "label": "Left Sidebar",
+                    "icon": "bi-layout-sidebar"
+                },
+                {
+                    "value": "right_sidebar",
+                    "label": "Right Sidebar",
+                    "icon": "bi-layout-sidebar-reverse"
+                },
+                {
+                    "value": "no_sidebar",
+                    "label": "No Sidebar",
+                    "icon": "bi-square"
+                }
+            ]
+        },
+        {
+            "col": "col-12",
+            "field": "icon-radios",
+            "label": "Header Style",
+            "key": "header_style",
+            "rule": "required",
+            "value": "minimal",
+            "option_col": "col-lg-2",
+            "options": [
+                {
+                    "value": "split",
+                    "label": "Split",
+                    "icon": "bi-layout-split"
+                },
+                {
+                    "value": "centered",
+                    "label": "Centered",
+                    "icon": "bi-text-center"
+                },
+                {
+                    "value": "minimal",
+                    "label": "Minimal",
+                    "icon": "bi-distribute-vertical"
+                },
+                {
+                    "value": "gradient",
+                    "label": "Gradient",
+                    "icon": "bi-aspect-ratio"
+                },
+                {
+                    "value": "no_header",
+                    "label": "No Header",
+                    "icon": "bi-square"
+                }
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Product View Style",
+            "key": "product_view_style",
+            "rule": "required",
+            "value": "list",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "grid",
+                    "label": "Grid",
+                    "icon": "bi-grid-3x3-gap"
+                },
+                {
+                    "value": "list",
+                    "label": "List",
+                    "icon": "bi-list-ul"
+                },
+                {
+                    "value": "list-compact",
+                    "label": "List Compact",
+                    "icon": "bi-distribute-horizontal"
+                }
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Listing Options Style",
+            "key": "listing_style",
+            "value": "style-1",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "style-1",
+                    "label": "Minimal",
+                    "icon": "bi-distribute-horizontal"
+                },
+                {
+                    "value": "style-2",
+                    "label": "Boxed",
+                    "icon": "bi-card-list"
+                },
+                {
+                    "value": "style-3",
+                    "label": "Modern",
+                    "icon": "bi-capsule"
+                }
+            ],
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Pagination Style",
+            "key": "pagination_type",
+            "value": "numbered",
+            "option_col": "col-lg-6",
+            "options": [
+                {
+                    "value": "numbered",
+                    "label": "Numbered",
+                    "icon": "bi-list-ol"
+                },
+                {
+                    "value": "load_more",
+                    "label": "Load More",
+                    "icon": "bi-arrow-repeat"
+                }
+            ],
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "input",
+            "type": "number",
+            "label": "Products Per Page",
+            "key": "products_per_page",
+            "value": "16",
+            "required": true,
+            "rule": [
+                "required",
+                "integer",
+                "min:1",
+                "max:100"
+            ]
+        },
+        {
+            "field": "heading",
+            "label": "Toggle Options",
+            "menu": "Page Layouts",
+            "description": "Control the visibility of various header elements.",
+            "icon": "bi-toggles2"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Breadcrumbs",
+            "key": "show_breadcrumbs",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "rule": "required"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Description",
+            "key": "show_description",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "rule": "required"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Results Count",
+            "key": "show_results",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "rule": "required"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Filter Button",
+            "key": "show_filters",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "rule": "required"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Sorting Dropdown",
+            "key": "show_sorting",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "rule": "required"
+        }
+    ],
+    "product_category_page": [
+        {
+            "field": "heading",
+            "label": "Product Category Page",
+            "menu": "Page Layouts",
+            "description": "Control the structural arrangement and container of the product category page.",
+            "icon": "bi-layout-sidebar-inset"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Container Width",
+            "key": "container_width",
+            "value": "default",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "default",
+                    "label": "Default",
+                    "icon": "bi-aspect-ratio"
+                },
+                {
+                    "value": "boxed",
+                    "label": "Boxed",
+                    "icon": "bi-bounding-box-circles"
+                },
+                {
+                    "value": "fluid",
+                    "label": "Full Width",
+                    "icon": "bi-arrows-fullscreen"
+                }
+            ],
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Sidebar Layout",
+            "key": "sidebar_layout",
+            "rule": "required",
+            "value": "right_sidebar",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "left_sidebar",
+                    "label": "Left Sidebar",
+                    "icon": "bi-layout-sidebar"
+                },
+                {
+                    "value": "right_sidebar",
+                    "label": "Right Sidebar",
+                    "icon": "bi-layout-sidebar-reverse"
+                },
+                {
+                    "value": "no_sidebar",
+                    "label": "No Sidebar",
+                    "icon": "bi-square"
+                }
+            ]
+        },
+        {
+            "col": "col-12",
+            "field": "icon-radios",
+            "label": "Header Style",
+            "key": "header_style",
+            "rule": "required",
+            "value": "split",
+            "option_col": "col-lg-2",
+            "options": [
+                {
+                    "value": "split",
+                    "label": "Split",
+                    "icon": "bi-layout-split"
+                },
+                {
+                    "value": "centered",
+                    "label": "Centered",
+                    "icon": "bi-text-center"
+                },
+                {
+                    "value": "minimal",
+                    "label": "Minimal",
+                    "icon": "bi-distribute-vertical"
+                },
+                {
+                    "value": "gradient",
+                    "label": "Gradient",
+                    "icon": "bi-aspect-ratio"
+                },
+                {
+                    "value": "no_header",
+                    "label": "No Header",
+                    "icon": "bi-square"
+                }
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Product View Style",
+            "key": "product_view_style",
+            "rule": "required",
+            "value": "list",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "grid",
+                    "label": "Grid",
+                    "icon": "bi-grid-3x3-gap"
+                },
+                {
+                    "value": "list",
+                    "label": "List",
+                    "icon": "bi-list-ul"
+                },
+                {
+                    "value": "list-compact",
+                    "label": "List Compact",
+                    "icon": "bi-distribute-horizontal"
+                }
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Listing Options Style",
+            "key": "listing_style",
+            "value": "style-3",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "style-1",
+                    "label": "Minimal",
+                    "icon": "bi-distribute-horizontal"
+                },
+                {
+                    "value": "style-2",
+                    "label": "Boxed",
+                    "icon": "bi-card-list"
+                },
+                {
+                    "value": "style-3",
+                    "label": "Modern",
+                    "icon": "bi-capsule"
+                }
+            ],
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Pagination Style",
+            "key": "pagination_type",
+            "value": "load_more",
+            "option_col": "col-lg-6",
+            "options": [
+                {
+                    "value": "numbered",
+                    "label": "Numbered",
+                    "icon": "bi-list-ol"
+                },
+                {
+                    "value": "load_more",
+                    "label": "Load More",
+                    "icon": "bi-arrow-repeat"
+                }
+            ],
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "input",
+            "type": "number",
+            "label": "Products Per Page",
+            "key": "products_per_page",
+            "value": "3",
+            "required": true,
+            "rule": [
+                "required",
+                "integer",
+                "min:1",
+                "max:100"
+            ]
+        },
+        {
+            "field": "heading",
+            "label": "Toggle Options",
+            "menu": "Page Layouts",
+            "description": "Control the visibility of various header elements.",
+            "icon": "bi-toggle-on"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Breadcrumbs",
+            "key": "show_breadcrumbs",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "rule": "required"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Description",
+            "key": "show_description",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "rule": "required"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Results Count",
+            "key": "show_results",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "rule": "required"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Filter Button",
+            "key": "show_filters",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "rule": "required"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Sorting Dropdown",
+            "key": "show_sorting",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "rule": "required"
+        },
+        {
+            "field": "alert",
+            "type": "info",
+            "icon": "bi-info-circle",
+            "label": "Please Note!",
+            "description": "These settings will control both category and sub-category pages."
+        }
+    ],
+    "single_product_page": [
+        {
+            "field": "heading",
+            "label": "Single Product Page",
+            "menu": "Page Layouts",
+            "icon": "bi-layout-split",
+            "description": "Control the structural arrangement and container of the product page."
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Container Width",
+            "key": "container_width",
+            "value": "default",
+            "option_col": "col-4",
+            "options": [
+                {
+                    "value": "default",
+                    "label": "Default",
+                    "icon": "bi-aspect-ratio"
+                },
+                {
+                    "value": "boxed",
+                    "label": "Boxed",
+                    "icon": "bi-bounding-box-circles"
+                },
+                {
+                    "value": "fluid",
+                    "label": "Full Width",
+                    "icon": "bi-arrows-fullscreen"
+                }
+            ],
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Sidebar Position",
+            "key": "sidebar_position",
+            "value": "right_sidebar",
+            "option_col": "col-4",
+            "options": [
+                {
+                    "value": "left_sidebar",
+                    "label": "Left Sidebar",
+                    "icon": "bi-layout-sidebar"
+                },
+                {
+                    "value": "right_sidebar",
+                    "label": "Right Sidebar",
+                    "icon": "bi-layout-sidebar-reverse"
+                },
+                {
+                    "value": "no_sidebar",
+                    "label": "No Sidebar",
+                    "icon": "bi-square"
+                }
+            ],
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-12",
+            "field": "icon-radios",
+            "label": "Product Display Layout",
+            "key": "display_layout",
+            "value": "fullwidth_title",
+            "option_col": "col-6 col-md-4 col-lg-2",
+            "options": [
+                {
+                    "value": "classic",
+                    "label": "Classic",
+                    "icon": "bi-layout-sidebar-reverse"
+                },
+                {
+                    "value": "fullwidth_title",
+                    "label": "Full Width",
+                    "icon": "bi-window-split"
+                },
+                {
+                    "value": "modern_split",
+                    "label": "Modern Split",
+                    "icon": "bi-layout-split"
+                },
+                {
+                    "value": "gallery_focus",
+                    "label": "Gallery Focus",
+                    "icon": "bi-image"
+                },
+                {
+                    "value": "hero_header",
+                    "label": "Hero Header",
+                    "icon": "bi-layout-text-window"
+                },
+                {
+                    "value": "minimalist",
+                    "label": "Minimalist",
+                    "icon": "bi-layout-text-sidebar"
+                }
+            ],
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-12",
+            "field": "icon-radios",
+            "label": "Preview & Gallery Button Style",
+            "key": "preview_gallery_display",
+            "value": "both",
+            "option_col": "col-3",
+            "options": [
+                {
+                    "value": "default",
+                    "label": "Default (Below)",
+                    "icon": "bi-collection-play"
+                },
+                {
+                    "value": "overlay",
+                    "label": "Overlay on Hover",
+                    "icon": "bi-layers"
+                },
+                {
+                    "value": "both",
+                    "label": "Both (Below + Overlay)",
+                    "icon": "bi-transparency"
+                },
+                {
+                    "value": "hide",
+                    "label": "Hide",
+                    "icon": "bi-eye-slash"
+                }
+            ],
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "field": "divider"
+        },
+        {
+            "field": "heading",
+            "label": "Breadcrumbs",
+            "icon": "bi-signpost-split",
+            "description": "Configure the breadcrumb trail displayed above the product title."
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Breadcrumbs",
+            "key": "show_breadcrumbs",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Include Product Title in Breadcrumb",
+            "key": "breadcrumb_show_title",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        },
+        {
+            "col": "col-lg-4",
+            "field": "bootstrap-select",
+            "label": "Breadcrumb Style",
+            "key": "breadcrumb_style",
+            "value": null,
+            "options": {
+                "": "Default",
+                "rounded_pill": "Rounded Pill",
+                "full_bg": "Full Background"
+            },
+            "search": false,
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "bootstrap-select",
+            "label": "Breadcrumb Color",
+            "key": "breadcrumb_color",
+            "value": "text-gray-700",
+            "options": {
+                "text-muted": "Default",
+                "text-light": "Light",
+                "text-dark": "Dark",
+                "text-gray-700": "Gray",
+                "text-primary": "Primary",
+                "text-secondary": "Secondary",
+                "text-success": "Success",
+                "text-danger": "Danger"
+            },
+            "search": false,
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "icon-radios",
+            "label": "Separator",
+            "key": "breadcrumb_separator",
+            "value": "slash",
+            "option_col": "col-4",
+            "options": [
+                {
+                    "value": "chevron",
+                    "icon": "bi-chevron-right"
+                },
+                {
+                    "value": "slash",
+                    "icon": "bi-slash"
+                },
+                {
+                    "value": "dot",
+                    "icon": "bi-dot"
+                }
+            ],
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "field": "divider"
+        },
+        {
+            "field": "heading",
+            "label": "Title Typography",
+            "icon": "bi-fonts",
+            "description": "Customize the appearance of the product title."
+        },
+        {
+            "col": "col-lg-3 col-md-6",
+            "field": "bootstrap-select",
+            "label": "Font Size",
+            "key": "title_size",
+            "value": "fs-2",
+            "option_col": "col-6",
+            "options": {
+                "fs-2": "Default",
+                "fs-1": "Large",
+                "fs-3": "Medium",
+                "fs-4": "Samll",
+                "fs-5": "Extra Small"
+            },
+            "search": false,
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-3 col-md-6",
+            "field": "bootstrap-select",
+            "label": "Font Weight",
+            "key": "title_weight",
+            "value": "fw-bold",
+            "option_col": "col-6",
+            "options": {
+                "fw-bold": "Default",
+                "fw-bolder": "Bolder",
+                "fw-semibold": "Semibold",
+                "fw-normal": "Normal",
+                "fw-light": "Light"
+            },
+            "search": false,
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-3 col-md-6",
+            "field": "bootstrap-select",
+            "label": "Title Color",
+            "key": "title_color",
+            "value": "text-danger",
+            "options": {
+                "": "Default",
+                "text-primary": "Primary",
+                "text-secondary": "Secondary",
+                "text-success": "Success",
+                "text-danger": "Danger",
+                "text-warning": "Warning",
+                "text-info": "Info",
+                "text-light": "Light",
+                "text-dark": "Dark",
+                "text-muted": "Muted",
+                "text-body": "Body",
+                "text-gradient": "Gradient"
+            },
+            "search": false,
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-3 col-md-6",
+            "field": "bootstrap-select",
+            "label": "Text Transform",
+            "key": "title_transform",
+            "value": null,
+            "option_col": "col-6",
+            "options": {
+                "": "Default",
+                "text-uppercase": "UPPERCASE",
+                "text-lowercase": "lowercase",
+                "text-capitalize": "Capitalize"
+            },
+            "search": false,
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "field": "divider"
+        },
+        {
+            "field": "heading",
+            "label": "Content Tabs",
+            "icon": "bi-segmented-nav",
+            "description": "Style the product detail tab navigation."
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Tab Style",
+            "key": "tab_style",
+            "value": "bordered",
+            "option_col": "col-4",
+            "options": [
+                {
+                    "value": "pill",
+                    "label": "Rounded Pills",
+                    "icon": "bi-capsule"
+                },
+                {
+                    "value": "rounded",
+                    "label": "Rounded Corners",
+                    "icon": "bi-app-indicator"
+                },
+                {
+                    "value": "bordered",
+                    "label": "Bordered",
+                    "icon": "bi-box2"
+                }
+            ],
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Tab Alignment",
+            "key": "tab_alignment",
+            "value": "start",
+            "option_col": "col-4",
+            "options": [
+                {
+                    "value": "start",
+                    "label": "Left",
+                    "icon": "bi-text-left"
+                },
+                {
+                    "value": "center",
+                    "label": "Center",
+                    "icon": "bi-text-center"
+                },
+                {
+                    "value": "fill",
+                    "label": "Justify",
+                    "icon": "bi-justify"
+                }
+            ],
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-3 col-md-6",
+            "field": "bootstrap-select",
+            "label": "Tab Text Color",
+            "key": "tab_text_color",
+            "value": "gray",
+            "options": {
+                "gray": "Default",
+                "primary": "Primary",
+                "secondary": "Secondary",
+                "success": "Success",
+                "danger": "Danger",
+                "warning": "Warning",
+                "info": "Info",
+                "dark": "Dark",
+                "light": "Light"
+            },
+            "search": false,
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-3 col-md-6",
+            "field": "bootstrap-select",
+            "label": "Active Tab Color",
+            "key": "tab_active_color",
+            "value": "primary",
+            "options": {
+                "": "Default",
+                "primary": "Primary",
+                "secondary": "Secondary",
+                "success": "Success",
+                "danger": "Danger",
+                "warning": "Warning",
+                "info": "Info",
+                "dark": "Dark",
+                "light": "Light",
+                "primary-bg-subtle": "Primary Subtle",
+                "secondary-bg-subtle": "Secondary Subtle",
+                "success-bg-subtle": "Success Subtle",
+                "danger-bg-subtle": "Danger Subtle",
+                "warning-bg-subtle": "Warning Subtle",
+                "info-bg-subtle": "Info Subtle",
+                "dark-bg-subtle": "Dark Subtle",
+                "light-bg-subtle": "Light Subtle"
+            },
+            "search": true,
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-3 col-md-6",
+            "field": "bootstrap-select",
+            "label": "Tab Area Style",
+            "key": "tab_area_style",
+            "value": null,
+            "options": {
+                "": "Default",
+                "rounded_pill": "Rounded Pill",
+                "full_bg": "Full Background"
+            },
+            "search": false,
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-3 col-md-6",
+            "field": "bootstrap-select",
+            "label": "Tab Area Background",
+            "key": "tab_area_bg",
+            "value": "primary-bg-subtle",
+            "options": {
+                "": "Default",
+                "primary-bg-subtle": "Primary Subtle",
+                "secondary-bg-subtle": "Secondary Subtle",
+                "success-bg-subtle": "Success Subtle",
+                "danger-bg-subtle": "Danger Subtle",
+                "warning-bg-subtle": "Warning Subtle",
+                "info-bg-subtle": "Info Subtle",
+                "dark-bg-subtle": "Dark Subtle",
+                "light-bg-subtle": "Light Subtle",
+                "light": "Light",
+                "dark": "Dark"
+            },
+            "search": false,
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Hide Tab Icons",
+            "key": "tab_hide_icon",
+            "value": 0,
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Hide Tab Counters",
+            "key": "tab_hide_counter",
+            "value": 0,
+            "required": false
+        },
+        {
+            "field": "divider"
+        },
+        {
+            "field": "heading",
+            "label": "Product Metadata",
+            "icon": "bi-info-square",
+            "description": "Toggle which stats and badges are shown near the product title."
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Seller Username",
+            "key": "meta_seller_name",
+            "value": 1,
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Total Sales Count",
+            "key": "meta_total_sales",
+            "value": 1,
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Product Average Rating",
+            "key": "meta_avg_reviews",
+            "value": 1,
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Free Downloads Count",
+            "key": "meta_free_downloads",
+            "value": 1,
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Recent Update Tag",
+            "key": "meta_recent_update",
+            "value": 1,
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Product Badges",
+            "key": "meta_product_badge",
+            "value": 1,
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Favorite Button",
+            "key": "meta_favorite_btn",
+            "value": 1,
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Share Button",
+            "key": "meta_share_btn",
+            "value": 1,
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Report Button",
+            "key": "meta_report_btn",
+            "value": 1,
+            "required": false
+        },
+        {
+            "field": "divider"
+        },
+        {
+            "field": "heading",
+            "label": "Related & Seller Products",
+            "icon": "bi-dropbox",
+            "description": "Toggle to hide or show related & seller more products section."
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Seller More Products",
+            "key": "seller_more_products",
+            "value": 1,
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Related Products",
+            "key": "related_products",
+            "value": 1,
+            "required": false
+        }
+    ],
+    "search_page": [
+        {
+            "field": "heading",
+            "label": "Search Page",
+            "menu": "Page Layouts",
+            "description": "Control the structural arrangement and container of the search page.",
+            "icon": "bi-search"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Container Width",
+            "key": "container_width",
+            "value": "boxed",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "default",
+                    "label": "Default",
+                    "icon": "bi-aspect-ratio"
+                },
+                {
+                    "value": "boxed",
+                    "label": "Boxed",
+                    "icon": "bi-bounding-box-circles"
+                },
+                {
+                    "value": "fluid",
+                    "label": "Full Width",
+                    "icon": "bi-arrows-fullscreen"
+                }
+            ],
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Sidebar Layout",
+            "key": "sidebar_layout",
+            "rule": "required",
+            "value": "no_sidebar",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "left_sidebar",
+                    "label": "Left Sidebar",
+                    "icon": "bi-layout-sidebar"
+                },
+                {
+                    "value": "right_sidebar",
+                    "label": "Right Sidebar",
+                    "icon": "bi-layout-sidebar-reverse"
+                },
+                {
+                    "value": "no_sidebar",
+                    "label": "No Sidebar",
+                    "icon": "bi-square"
+                }
+            ]
+        },
+        {
+            "col": "col-12",
+            "field": "icon-radios",
+            "label": "Header Style",
+            "key": "header_style",
+            "rule": "required",
+            "value": "split",
+            "option_col": "col-lg-2",
+            "options": [
+                {
+                    "value": "split",
+                    "label": "Split",
+                    "icon": "bi-layout-split"
+                },
+                {
+                    "value": "centered",
+                    "label": "Centered",
+                    "icon": "bi-text-center"
+                },
+                {
+                    "value": "minimal",
+                    "label": "Minimal",
+                    "icon": "bi-distribute-vertical"
+                },
+                {
+                    "value": "gradient",
+                    "label": "Gradient",
+                    "icon": "bi-aspect-ratio"
+                },
+                {
+                    "value": "no_header",
+                    "label": "No Header",
+                    "icon": "bi-square"
+                }
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Product View Style",
+            "key": "product_view_style",
+            "rule": "required",
+            "value": "list",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "grid",
+                    "label": "Grid",
+                    "icon": "bi-grid-3x3-gap"
+                },
+                {
+                    "value": "list",
+                    "label": "List",
+                    "icon": "bi-list-ul"
+                },
+                {
+                    "value": "list-compact",
+                    "label": "List Compact",
+                    "icon": "bi-distribute-horizontal"
+                }
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Listing Options Style",
+            "key": "listing_style",
+            "value": "style-1",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "style-1",
+                    "label": "Minimal",
+                    "icon": "bi-distribute-horizontal"
+                },
+                {
+                    "value": "style-2",
+                    "label": "Boxed",
+                    "icon": "bi-card-list"
+                },
+                {
+                    "value": "style-3",
+                    "label": "Modern",
+                    "icon": "bi-capsule"
+                }
+            ],
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Pagination Style",
+            "key": "pagination_type",
+            "value": "numbered",
+            "option_col": "col-lg-6",
+            "options": [
+                {
+                    "value": "numbered",
+                    "label": "Numbered",
+                    "icon": "bi-list-ol"
+                },
+                {
+                    "value": "load_more",
+                    "label": "Load More",
+                    "icon": "bi-arrow-repeat"
+                }
+            ],
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "input",
+            "type": "number",
+            "label": "Products Per Page",
+            "key": "products_per_page",
+            "value": "3",
+            "required": true,
+            "rule": [
+                "required",
+                "integer",
+                "min:1",
+                "max:100"
+            ]
+        },
+        {
+            "field": "heading",
+            "label": "Toggle Options",
+            "menu": "Page Layouts",
+            "description": "Control the visibility of various header elements.",
+            "icon": "bi-toggles2"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Breadcrumbs",
+            "key": "show_breadcrumbs",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "rule": "required"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Results Count",
+            "key": "show_results",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "rule": "required"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Filter Button",
+            "key": "show_filters",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "rule": "required"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Sorting Dropdown",
+            "key": "show_sorting",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "rule": "required"
+        }
+    ],
+    "general_page": [
+        {
+            "field": "heading",
+            "label": "General Page",
+            "menu": "Page Layouts",
+            "description": "Control the structural arrangement and container of the single page.",
+            "icon": "bi-file-earmark-person"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Container Width",
+            "key": "container_width",
+            "value": "boxed",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "default",
+                    "label": "Default",
+                    "icon": "bi-aspect-ratio"
+                },
+                {
+                    "value": "boxed",
+                    "label": "Boxed",
+                    "icon": "bi-bounding-box-circles"
+                },
+                {
+                    "value": "fluid",
+                    "label": "Full Width",
+                    "icon": "bi-arrows-fullscreen"
+                }
+            ],
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Sidebar Layout",
+            "key": "sidebar_layout",
+            "rule": "required",
+            "value": "right_sidebar",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "left_sidebar",
+                    "label": "Left Sidebar",
+                    "icon": "bi-layout-sidebar"
+                },
+                {
+                    "value": "right_sidebar",
+                    "label": "Right Sidebar",
+                    "icon": "bi-layout-sidebar-reverse"
+                },
+                {
+                    "value": "no_sidebar",
+                    "label": "No Sidebar",
+                    "icon": "bi-square"
+                }
+            ]
+        },
+        {
+            "col": "col-12",
+            "field": "icon-radios",
+            "label": "Header Style",
+            "key": "header_style",
+            "rule": "required",
+            "value": "centered",
+            "option_col": "col-lg-2",
+            "options": [
+                {
+                    "value": "split",
+                    "label": "Split",
+                    "icon": "bi-layout-split"
+                },
+                {
+                    "value": "centered",
+                    "label": "Centered",
+                    "icon": "bi-text-center"
+                },
+                {
+                    "value": "minimal",
+                    "label": "Minimal",
+                    "icon": "bi-distribute-vertical"
+                },
+                {
+                    "value": "gradient",
+                    "label": "Gradient",
+                    "icon": "bi-aspect-ratio"
+                },
+                {
+                    "value": "no_header",
+                    "label": "No Header",
+                    "icon": "bi-square"
+                }
+            ]
+        },
+        {
+            "field": "heading",
+            "label": "Toggle Options",
+            "menu": "Page Layouts",
+            "description": "Control the visibility of various header elements.",
+            "icon": "bi-toggles2"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Breadcrumbs",
+            "key": "show_breadcrumbs",
+            "value": 0,
+            "on": "Show",
+            "off": "Hide",
+            "rule": "required"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Description",
+            "key": "show_description",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "rule": "required"
+        },
+        {
+            "field": "alert",
+            "type": "info",
+            "icon": "bi-info-circle",
+            "label": "Individual Page Overrides",
+            "description": "Please note that the settings configured here serve as global defaults. You can override these settings for specific pages by editing them individually in the Pages section."
+        }
+    ],
+    "blog_index_page": [
+        {
+            "field": "heading",
+            "label": "Blog Index Page",
+            "menu": "Blog",
+            "description": "Configure the layout and display options for the blog index, category, and search page.",
+            "icon": "bi-journal-text"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Container Width",
+            "key": "blog_index_container_width",
+            "rule": [
+                "nullable",
+                "string"
+            ],
+            "required": false,
+            "value": "default",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "default",
+                    "label": "Default",
+                    "icon": "bi-aspect-ratio"
+                },
+                {
+                    "value": "boxed",
+                    "label": "Boxed",
+                    "icon": "bi-bounding-box-circles"
+                },
+                {
+                    "value": "fluid",
+                    "label": "Full Width",
+                    "icon": "bi-arrows-fullscreen"
+                }
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Sidebar Layout",
+            "key": "blog_index_sidebar_layout",
+            "rule": [
+                "required",
+                "string"
+            ],
+            "required": true,
+            "value": "right_sidebar",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "left_sidebar",
+                    "label": "Left Sidebar",
+                    "icon": "bi-layout-sidebar"
+                },
+                {
+                    "value": "right_sidebar",
+                    "label": "Right Sidebar",
+                    "icon": "bi-layout-sidebar-reverse"
+                },
+                {
+                    "value": "no_sidebar",
+                    "label": "No Sidebar",
+                    "icon": "bi-square"
+                }
+            ]
+        },
+        {
+            "col": "col-12",
+            "field": "icon-radios",
+            "label": "Header Style",
+            "key": "blog_index_header_style",
+            "rule": [
+                "required",
+                "string"
+            ],
+            "required": true,
+            "value": "split",
+            "option_col": "col-lg-2",
+            "options": [
+                {
+                    "value": "split",
+                    "label": "Split",
+                    "icon": "bi-layout-split"
+                },
+                {
+                    "value": "centered",
+                    "label": "Centered",
+                    "icon": "bi-text-center"
+                },
+                {
+                    "value": "minimal",
+                    "label": "Minimal",
+                    "icon": "bi-distribute-vertical"
+                },
+                {
+                    "value": "gradient",
+                    "label": "Gradient",
+                    "icon": "bi-aspect-ratio"
+                },
+                {
+                    "value": "no_header",
+                    "label": "No Header",
+                    "icon": "bi-square"
+                }
+            ]
+        },
+        {
+            "col": "col-lg-12",
+            "field": "icon-radios",
+            "label": "Blog View Style",
+            "key": "blog_index_view_style",
+            "rule": [
+                "required",
+                "string"
+            ],
+            "required": true,
+            "value": "list",
+            "option_col": "col-lg-6",
+            "options": [
+                {
+                    "value": "grid",
+                    "label": "Grid",
+                    "icon": "bi-grid-3x3-gap"
+                },
+                {
+                    "value": "list",
+                    "label": "List",
+                    "icon": "bi-list-ul"
+                }
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Author",
+            "key": "blog_index_show_author",
+            "rule": [
+                "required",
+                "integer"
+            ],
+            "required": true,
+            "value": 1,
+            "on": "Show",
+            "off": "Hide"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Date",
+            "key": "blog_index_show_date",
+            "rule": [
+                "required",
+                "integer"
+            ],
+            "required": true,
+            "value": 1,
+            "on": "Show",
+            "off": "Hide"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Category",
+            "key": "blog_index_show_category",
+            "rule": [
+                "required",
+                "integer"
+            ],
+            "required": true,
+            "value": 1,
+            "on": "Show",
+            "off": "Hide"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Breadcrumbs",
+            "key": "blog_index_show_breadcrumbs",
+            "rule": [
+                "required",
+                "integer"
+            ],
+            "required": true,
+            "value": 1,
+            "on": "Show",
+            "off": "Hide"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Read More Button",
+            "key": "blog_index_show_read_more",
+            "rule": [
+                "required",
+                "integer"
+            ],
+            "required": true,
+            "value": 1,
+            "on": "Show",
+            "off": "Hide"
+        }
+    ],
+    "blog_article_page": [
+        {
+            "field": "heading",
+            "label": "Blog Article Page",
+            "menu": "Blog",
+            "description": "Configure the layout and display options for individual blog articles.",
+            "icon": "bi-file-earmark-richtext"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Container Width",
+            "key": "blog_article_container_width",
+            "rule": [
+                "nullable",
+                "string"
+            ],
+            "required": false,
+            "value": "default",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "default",
+                    "label": "Default",
+                    "icon": "bi-aspect-ratio"
+                },
+                {
+                    "value": "boxed",
+                    "label": "Boxed",
+                    "icon": "bi-bounding-box-circles"
+                },
+                {
+                    "value": "fluid",
+                    "label": "Full Width",
+                    "icon": "bi-arrows-fullscreen"
+                }
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "icon-radios",
+            "label": "Sidebar Layout",
+            "key": "blog_article_sidebar_layout",
+            "rule": [
+                "required",
+                "string"
+            ],
+            "required": true,
+            "value": "right_sidebar",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "left_sidebar",
+                    "label": "Left Sidebar",
+                    "icon": "bi-layout-sidebar"
+                },
+                {
+                    "value": "right_sidebar",
+                    "label": "Right Sidebar",
+                    "icon": "bi-layout-sidebar-reverse"
+                },
+                {
+                    "value": "no_sidebar",
+                    "label": "No Sidebar",
+                    "icon": "bi-square"
+                }
+            ]
+        },
+        {
+            "col": "col-12",
+            "field": "icon-radios",
+            "label": "Article View Style",
+            "key": "blog_article_view_style",
+            "rule": [
+                "required",
+                "string"
+            ],
+            "required": true,
+            "value": "style-1",
+            "option_col": "col-lg-4",
+            "options": [
+                {
+                    "value": "style-1",
+                    "label": "Classic",
+                    "icon": "bi-layout-text-sidebar-reverse"
+                },
+                {
+                    "value": "style-2",
+                    "label": "Modern",
+                    "icon": "bi-window"
+                },
+                {
+                    "value": "style-3",
+                    "label": "Immersive",
+                    "icon": "bi-fullscreen"
+                }
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Author",
+            "key": "blog_article_show_author",
+            "rule": [
+                "required",
+                "integer"
+            ],
+            "required": true,
+            "value": 1,
+            "on": "Show",
+            "off": "Hide"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Date",
+            "key": "blog_article_show_date",
+            "rule": [
+                "required",
+                "integer"
+            ],
+            "required": true,
+            "value": 1,
+            "on": "Show",
+            "off": "Hide"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Category",
+            "key": "blog_article_show_category",
+            "rule": [
+                "required",
+                "integer"
+            ],
+            "required": true,
+            "value": 1,
+            "on": "Show",
+            "off": "Hide"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Comments",
+            "key": "blog_article_show_comments",
+            "rule": [
+                "required",
+                "integer"
+            ],
+            "required": true,
+            "value": 1,
+            "on": "Show",
+            "off": "Hide"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Share",
+            "key": "blog_article_show_share",
+            "rule": [
+                "required",
+                "integer"
+            ],
+            "required": true,
+            "value": 1,
+            "on": "Show",
+            "off": "Hide"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Breadcrumbs",
+            "key": "blog_article_show_breadcrumbs",
+            "rule": [
+                "required",
+                "integer"
+            ],
+            "required": true,
+            "value": 1,
+            "on": "Show",
+            "off": "Hide"
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Show Description",
+            "key": "blog_article_show_description",
+            "rule": [
+                "required",
+                "integer"
+            ],
+            "required": true,
+            "value": 1,
+            "on": "Show",
+            "off": "Hide"
+        }
+    ]
+}

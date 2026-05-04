@@ -1,0 +1,95 @@
+:root[data-bs-theme="dark"] {
+  /* Core Colors */
+  --primary_color: #198754; /* Keep primary or adjust for dark mode visibility */
+  --secondary_color: #e9ecef; /* Inverted from #222222 */
+
+  /* Backgrounds */
+  --background_color: #212529; /* Dark background */
+  --body-bg: #212529;
+
+  /* Navbar / Headers */
+  --navbar1_background_color: #2c3034;
+  --navbar2_background_color: #2c3034;
+  --header_background_color: #1a1d20;
+  --swiper_background_color: #1a1d20;
+
+  /* Text */
+  --text_color: #dee2e6;
+  --heading_color: #f8f9fa;
+  --text_muted: #adb5bd;
+
+  /* Borders */
+  --border_color: #373b3e;
+
+  /* User Panel */
+  --userpanel_sidebar_header_background_color: #2c3034;
+  --userpanel_sidebar_body_background_color: #2c3034;
+  --userpanel_sidebar_elements_background_color: #343a40;
+
+  /* Specific Elements */
+  --files_icon_color: #20c997; /* Lighter green for dark mode */
+  --item_preview_navbar_background: #000000;
+
+  /* Footer */
+  --footer_background_color: #1a1d20;
+  --footer_border_color: #373b3e;
+  --footer_text_color: #adb5bd;
+
+  /* Card and Components overrides for Bootstrap integration */
+  --bs-body-bg: var(--background_color);
+  --bs-body-color: var(--text_color);
+  --bs-card-bg: #2c3034;
+  --bs-card-border-color: var(--border_color);
+  --bs-border-color: var(--border_color);
+  --bs-heading-color: var(--heading_color);
+}
+
+/* Additional Dark Mode Overrides */
+[data-bs-theme="dark"] body {
+    background-color: var(--background_color);
+    color: var(--text_color);
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: var(--bs-card-bg);
+    border-color: var(--bs-card-border-color);
+}
+
+[data-bs-theme="dark"] .dropdown-menu {
+    background-color: #343a40;
+    border-color: #495057;
+}
+
+[data-bs-theme="dark"] .dropdown-item {
+    color: #dee2e6;
+}
+
+[data-bs-theme="dark"] .dropdown-item:hover,
+[data-bs-theme="dark"] .dropdown-item:focus {
+    background-color: #495057;
+    color: #fff;
+}
+
+[data-bs-theme="dark"] .form-control {
+    background-color: #2c3034;
+    border-color: #495057;
+    color: #e9ecef;
+}
+
+[data-bs-theme="dark"] .form-control:focus {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Fix for light borders/shadows in dark mode */
+[data-bs-theme="dark"] .shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.35) !important;
+}
+
+[data-bs-theme="dark"] .border-bottom,
+[data-bs-theme="dark"] .border-top,
+[data-bs-theme="dark"] .border-start,
+[data-bs-theme="dark"] .border-end,
+[data-bs-theme="dark"] .border {
+    border-color: var(--border_color) !important;
+}

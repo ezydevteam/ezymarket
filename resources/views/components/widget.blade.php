@@ -1,0 +1,2 @@
+{{-- Widget Area Component --}}
+{!! $content !!}
